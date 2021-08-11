@@ -1,7 +1,7 @@
 package EmployeeWageBuilder;
 
 public class EmployeeWageBuilder {
-    public static void main(String[] args)
+    public static int computeEmployeeWage()
     {
         System.out.println("Welcome to Employee Wage computation program on Master Branch.");
         int IS_FULL_TIME=2;
@@ -36,5 +36,11 @@ public class EmployeeWageBuilder {
         }
         int totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
         System.out.println("Employee Wage is:"+totalEmpWage);
+        return totalEmpWage;
+    }
+
+    public static void main(String[] args)
+    {
+        computeEmployeeWage();
     }
 }
